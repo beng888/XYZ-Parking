@@ -198,7 +198,7 @@ export default function ParkingLot() {
             <div
               title={`${slot.size} parking`}
               onClick={() =>
-                slot.occupied
+                slot.occupied && !editing
                   ? setForManaging({ open: true, content: slot })
                   : null
               }

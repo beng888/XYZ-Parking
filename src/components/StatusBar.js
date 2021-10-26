@@ -46,11 +46,11 @@ function StatusBar() {
         <span>{time}</span>
       </div>
       <div className="flex justify-between gap-4">
-        <span>OverWrite:</span>
+        <span>Skip Time:</span>
         <span>
           <input
             type="datetime-local"
-            className="text-black"
+            className="text-black cursor-pointer"
             value={mockDate || ""}
             onChange={(e) => setMockDate(e.target.value)}
           />
